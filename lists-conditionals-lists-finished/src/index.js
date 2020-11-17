@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './containers/App';
-import registerServiceWorker from './registerServiceWorker';
+import { BrowserRouter} from 
+'react-router-dom';
+import MovieList from './ContextAPI/MovieList';
 
-ReactDOM.render(<App title="Person Manager" />, document.getElementById('root'));
-registerServiceWorker();
+ReactDOM.render(
+    // <BrowserRouter>
+    <MovieList/>
+    // </BrowserRouter>,
+    ,document.getElementById('root'));
